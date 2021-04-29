@@ -1,9 +1,8 @@
 # **Financee** 
 
 
----
 ## **Overview**
----
+
 
 Financee is a webapp built on the basis of a [Django](https://www.djangoproject.com/) backend and a [ReactJS](https://reactjs.org/) frontend. 
 <br> It is a great tool made for traders and investors who strive for efficient risk and trade management. Additionally, its other features that will greatly help traders and investors in their hunt for new trade opportunities. 
@@ -26,11 +25,12 @@ All of the stock information comes from two external APIs, [twelvedata](https://
 
 ![Home](https://i.imgur.com/uP38aeT.png?2)
 
+<br>
+
 ---
 ## **Features**
----
-<!-- * [Trade Calculator](#1.-Trade-Calculator)
-* [Tradebills](#2.-Tradebills) -->
+
+
 
 ## **1. Trade Calculator**
 The trade calculator, in short, allows a trader to input some properties and get the maximum amount of shares they can buy of a specific stock. The properties from which this number is derived from include:
@@ -66,6 +66,7 @@ Not only do tradebills eliminate emotional trading but they also make the proces
 ![Tradebills](https://i.imgur.com/JBTyyp3.png?1 "Tradebills")
 
 <br>
+
 
 ---
 
@@ -114,9 +115,6 @@ Watchlists are a common thing amongst any stock related web app, they help trade
 
 ---
 
-<br>
-
-
 ## **What makes this project more complex than the others?**
 
 This project has challenged me in ways that no other project in this course has done. Forcing me to dive more into Django and Reactjs to achieve the things I needed. Some of the noteable obstacles that I had to go over in this project are:
@@ -127,11 +125,7 @@ This project has challenged me in ways that no other project in this course has 
 * Not using any CSS frameworks for any major elements in my app. 
 * Dealing with full Mobile Responsiveness
 
-<br> 
-
 ---
-
-<br>
 
 ## **Things to work on**
 
@@ -141,8 +135,6 @@ I'm proud of and satisfied with what this project has turned out to be however t
 * Expanding the pool of stocks that can be selected fromas it's currently limited to 3 major exchanges. 
 * Improving the autocomplete stock symbol search field as the options can be a bit buggy in certain cases. 
 
-<br>
-
 ---
 
 <br>
@@ -150,58 +142,44 @@ I'm proud of and satisfied with what this project has turned out to be however t
 ## **How to run**
 
 
-### 1. Clone this repo or just download the code ZIP file.
+1. Clone this repo or just download the code ZIP file.
 
-<br>
-
-### 2. Initialize a virtual environment and activate it (optional)
+2. Initialize a virtual environment and activate it (optional)
 ```
 python -m venv financee-venv 
 financee-venv\Scripts\activate.bat
 ```
-<br>
 
-
-### 3. Download all packages from requirements.txt
+3. Download all packages from requirements.txt
 ```
 pip install -r requirements.txt
 ```
 
-<br>
+4. Sign in to [twelvedata](https://twelvedata.com/) and [marketstack](https://marketstack.com/signup/free) to acquire API keys.
+
+5. Open the `.env` file in `frontend\financee-app` and replace  `YOUR_TWELVEDATA_KEY` and `YOUR_MARKETSTACK_KEY` with your respective API keys.
 
 
-### 4. Sign in to [twelvedata](https://twelvedata.com/) and [marketstack](https://marketstack.com/signup/free) to acquire API keys.
-
-<br>
-
-
-### 5. Open the `.env` file in `frontend\financee-app` and replace  `YOUR_TWELVEDATA_KEY` and `YOUR_MARKETSTACK_KEY` with your respective API keys.
-
-<br>
-
-
-### 6. Run the django server
+6. Run the django server
 ```
 cd backend
 python manage.py runserver
 ```
 
-<br>
 
-
-### 7. Open second terminal in root and run this to activate venv and then install node packages
+7. Open second terminal in root and run this to activate venv and then install node packages
 ```
 financee-venv\Scripts\activate.bat 
 cd frontend\financee-app
 npm install
 ```
 
-### 8. Run react app
+8. Run react app
 ```
 npm start
 ```
 
-### 9. Open the url specified and Enjoy!
+9. Open the url specified and Enjoy!
 
 <br>
 
