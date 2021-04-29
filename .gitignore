@@ -1,0 +1,6 @@
+capstone-env/
+
+frontend/.vscode/
+frontend/financee-app/node_modules/
+
+backend/.vscode/
