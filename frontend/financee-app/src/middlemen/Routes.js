@@ -28,7 +28,7 @@ function Routes() {
 	const [options, setOptions] = useState([]);
 
     // API keys
-    const twelvedata_key = "9baa859c55d048828d3ba87f07ea0792"
+    const twelvedata_key = process.env.REACT_APP_TWELVEDATA_KEY
 
 	// When the app renders, this is run. This gets all stock symbols from NASDAQ, NYSE, and OTC exchanges
 	useEffect(() => {
